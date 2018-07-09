@@ -1,3 +1,20 @@
+# Kognitivo Fork
+This is a fork of Kognitivo https://github.com/eviltnan/kognitivo
+
+I'm trying to make it run with default ubuntu 18.04
+
+Requirements:
+python-pytest
+python-pytest-mock
+python-kivy
+
+Modifications:
+* Downgraded Kivy requirements
+* Removed android based invoke tasks. Invoke can't run if sdk is not set.
+
+
+# ---- Kognitivo README ----
+
 # Kivy based brain trainer
 
 This repository is there for demonstration purposes mainly. 
