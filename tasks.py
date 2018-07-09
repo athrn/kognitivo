@@ -22,12 +22,12 @@ if os.path.exists("invoke.json"):
     with open("invoke.json") as f:
         configuration.update(json.load(f))
 
-configuration['adb'] = os.path.join(configuration['sdk'], "platform-tools", "adb")
-configuration['sdk_manager'] = os.path.join(configuration['sdk'], "tools", "android")
+# configuration['adb'] = os.path.join(configuration['sdk'], "platform-tools", "adb")
+# configuration['sdk_manager'] = os.path.join(configuration['sdk'], "tools", "android")
 
 ns = Collection()
 
 ns.add_collection(Collection.from_module(kivy_collection, name='kivy'))
-ns.add_collection(Collection.from_module(android_collection, name='android'))
+# ns.add_collection(Collection.from_module(android_collection, name='android'))
 ns.add_collection(Collection.from_module(kognitivo_invoke))
 ns.configure(configuration)
