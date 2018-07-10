@@ -8,10 +8,12 @@ python-pytest
 python-pytest-mock
 python-kivy
 
-Modifications:
-* Downgraded Kivy requirements
-* Removed android based invoke tasks. Invoke can't run if sdk is not set.
-
+Changes:
+* v0.2
+    * Invoke fix: Android tasks are not added unless sdk is set.
+* v0.1
+    * Downgraded Kivy requirements
+    * Removed android based invoke tasks. Invoke can't run if sdk is not set.
 
 # ---- Kognitivo README ----
 
